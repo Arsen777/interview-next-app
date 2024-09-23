@@ -1,6 +1,8 @@
-import LanguageSwitcher from "./components/LanguageSwitcher";
+"use client";
 
-import "./globals.css";
+import LanguageSwitcher from "./components/languageSwitcher";
+
+import "../styles/globals.scss";
 
 function RootLayout({ children }: { children: React.ReactNode }) {
   return (

@@ -1,3 +1,5 @@
+"use client";
+
 type ProductPageProps = {
   params: { id: string };
 };
