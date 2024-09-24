@@ -1,16 +1,17 @@
 "use client";
 
-import { useParams } from "next/navigation";
+import { useTranslation } from "next-i18next";
 
 import styles from "./page.module.scss";
 
-export default function Home() {
-  const { lang } = useParams();
-
+const Home = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className={styles.container}>
-      <h1>Welcome to the Home Page</h1>
-      <p>This page is statically generated at build time.</p>
+      <h1>{t('welcome')}</h1>
     </div>
   );
-}
+};
+
+export default Home;

@@ -1,14 +1,15 @@
-"use client";
+import { useRouter } from 'next/router';
 
-type ProductPageProps = {
-  params: { id: string };
-};
+const ProductPage = () => {
+  const router = useRouter();
+  const { id } = router.query;
 
-export default function ProductPage({ params }: ProductPageProps) {
   return (
     <div>
-      <h1>Product Detail for {params.id}</h1>
-      <p>This content is generated dynamically based on the URL parameter.</p>
+      <h1>Product ID: {id}</h1>
+      {/* Fetch product data here */}
     </div>
   );
-}
+};
+
+export default ProductPage;
