@@ -1,5 +1,6 @@
 "use client";
 
+import React from 'react'; // Import React
 import { useRouter } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
